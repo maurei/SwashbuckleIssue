@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwashbuckleIssue", "SwashbuckleIssue\SwashbuckleIssue.csproj", "{2DBC49CF-2E56-4E2D-85B4-AE62CB080F22}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2DBC49CF-2E56-4E2D-85B4-AE62CB080F22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DBC49CF-2E56-4E2D-85B4-AE62CB080F22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DBC49CF-2E56-4E2D-85B4-AE62CB080F22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DBC49CF-2E56-4E2D-85B4-AE62CB080F22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C503D95-9FEB-426B-94B2-416A8CE8460E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C503D95-9FEB-426B-94B2-416A8CE8460E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C503D95-9FEB-426B-94B2-416A8CE8460E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C503D95-9FEB-426B-94B2-416A8CE8460E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
