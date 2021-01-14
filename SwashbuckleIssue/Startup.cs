@@ -17,7 +17,12 @@ namespace SwashbuckleIssue
             IMvcCoreBuilder mvcBuilder = services.AddMvcCore();
             mvcBuilder.AddMvcOptions(options =>
             {
-                _postMvcOptionsConfiguration?.Invoke(options);
+                if (_postMvcOptionsConfiguration == null)
+                {
+                    throw new Exception("This shouldn't be null. Looks like Startup.Configure(IApplication) wasn't called").
+                }
+
+                _postMvcOptionsConfiguration.Invoke(options);
             });
             mvcBuilder.AddApiExplorer();
             services.AddSwaggerGen(options =>
@@ -42,6 +47,8 @@ namespace SwashbuckleIssue
             app.UseDeveloperExceptionPage();
             app.UseRouting();
 
+            // Here we can retrieve any service and register it as a convention which is what we do in JADNC, but keeping the example simple here
+            // var routingConvention = app.ApplicationServices.GetService<CustomRoutingConvention>();
             _postMvcOptionsConfiguration = options => options.Conventions.Insert(0, new CustomRoutingConvention());
 
             app.UseSwagger(options =>
