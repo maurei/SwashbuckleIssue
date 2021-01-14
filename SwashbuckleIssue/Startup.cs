@@ -19,7 +19,7 @@ namespace SwashbuckleIssue
             {
                 if (_postMvcOptionsConfiguration == null)
                 {
-                    throw new Exception("This shouldn't be null. Looks like Startup.Configure(IApplication) wasn't called").
+                    throw new Exception("This shouldn't be null. Looks like Startup.Configure(IApplication) wasn't called");
                 }
 
                 _postMvcOptionsConfiguration.Invoke(options);
